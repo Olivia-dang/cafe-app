@@ -16,4 +16,15 @@ class Menu
     def get_items
         return @MENU
     end
+    def display
+        puts "Menu".center(15)
+        puts "---------------".center(15)
+        @MENU.each {|item| puts item}
+        return nil
+    end
 end
+
+# menu = Menu.new
+# menu.add_item("latte", 4.00)
+# menu.add_item("cake", 3.00)
+# menu.display
